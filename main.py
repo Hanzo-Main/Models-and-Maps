@@ -3,5 +3,5 @@
 # Date created: 21/02/23
 # Date last modified: 21/02/23
 # Name: Kira Gray
-# Description: Models and Map assignment, with character and idventory functions
+# Description: Models and Map assignment /w character and idventory functions
 
