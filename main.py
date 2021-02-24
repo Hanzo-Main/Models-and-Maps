@@ -5,3 +5,8 @@
 # Name: Kira Gray
 # Description: Models and Map assignment /w character and idventory functions
 
+import title as tit
+
+tit.intro_text()
+
+def 
