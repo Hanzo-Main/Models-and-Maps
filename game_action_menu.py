@@ -10,7 +10,6 @@
 # function with a while loop that has if-elif-else statements
 # inside for each option.
 
-
 def continuous(ans):
     while ans:
         print("""

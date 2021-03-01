@@ -10,14 +10,14 @@ locations = {
   'cargo_left': {
     'size': 'large',
     'apperence': 'many crates are piled high',
-    'next_places': """there is more cargo on the right and a latter going up on
-    the left"""
+    'next_places': """there is more cargo on the right and a latter going up on the left
+    """
   },
   'cargo_right': {
     'size': 'large',
     'apperence': """more cargo containers""",
-    'next_places': """theres a door to the right and the other side of the cargo
-    hold on the left"""
+    'next_places': """theres a door to the right and the other side of the cargo hold on the left
+    """
   },
   # may not be in the final cut
   'hypdriv_room': {
@@ -55,16 +55,6 @@ locations = {
     'next_places': 'the only way is to the left back to the small room'
   }
 }
-
-# for loop that print the locations and information about it
-print("The details of the loctions in the game: ")
-for location, places in locations.items():
-    size = places['size']
-    apperence = places['apperence']
-    next_places = places['next_places']
-    print(f"""\n{location.title()} is a {size} room. There is {apperence}.
-    {next_places}""")
-
 # a nested dictionary of characters in the game and information on them.
 characters = {
   'player': {
@@ -85,35 +75,3 @@ characters = {
     'health': '150'
   }
 }
-
-# for loop that prints off the characters in the game and information on them
-# if else statement to give player more personalized info
-print("""
-""")
-print("\nThe details of the characters in the game:")
-for character, info in characters.items():
-  descr = info['descr']
-  dmg = info['dmg']
-  health = info['health']
-  if character == 'player':
-    print(f"""\n{character.title()} is {descr}. 
-    Your blaster deals {dmg} and you have {health} health.""")
-  else:
-    print(f"""\n{character.title()} is {descr}. 
-    Thier blaster deals {dmg} and they have {health} health.""")
-
-# a dictionary of items that the charactrs have in thier inventory (at the start)
-print("""
-""")
-print("\nThe idventorys of the characters in the game:")
-inventory = {
-  'player': ['blaster'],
-  'pirate': ['blaster', 'health kit'],
-  'captain': ['blaster', 'override card'],
-}
-
-# for loops that prints off the diffrent characters inventory
-for inven, items in inventory.items():
-  print(f"\n {inven.title()}'s inventory:")
-  for item in items: 
-    print(f"\t{item}")
